@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sub.marino</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
+
+        <link rel="shortcut icon" href="imagens/icone.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" title="Home">
+                <img src="imagens/submarino-logo.png"
+                alt="Sub.marino" class="header-logo">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu"
+            class="header-menu">
+                <img src="imagens/menu.png" alt="Menu"
+                class="header-btn">
+            </a>
+
+            <nav class="header-nav">
+                <!-- Comentário -->
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html" title="Informática">
+                            Informática
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <img src="imagens/banner.webp" alt="Banner"
+            class="banner-img">
+        </div>
+
+        <main>
+            <h1>Entre em Contato</h1>
+
+            <form name="form-contato" method="post" action="https://professorburnes.com.br/teste-form.php">
+                <label for="nome">Preencha seu nome</label>
+                <input type="text" name="nome" id="nome" required>
+                
+
+                <label for="email">Preencha seu e-mail</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="assunto">Selecione um Assunto</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="">Selecione</option>
+                    <option value="Crítica">Crítica</option>
+                    <option value="Sugestão">Sugestão</option>
+                    <option value="Parabenização">Parabenização</option>
+                </select>
+
+                <label for="mensagem">Preencha a Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required rows="5"></textarea>
+
+                <br>
+                <p class="center">
+                    <button type="submit">
+                        Enviar Mensagem
+                    </button> 
+                </p>
+            </form>
+
+            <h2>Mapa de Localização</h2>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2120.0229010823296!2d-52.38195293290732!3d-24.048261174445713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ed75406904a1fb%3A0x982fefe9168ebe0d!2sAv.%20Irm%C3%A3os%20Pereira%2C%20670%20-%20Centro%2C%20Campo%20Mour%C3%A3o%20-%20PR%2C%2087301-010!5e0!3m2!1spt-BR!2sbr!4v1684364228460!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </main>
+
+        <footer class="footer">
+            <p> Submarino - Sua loja de eletrônicos</p>
+            <p>Av. Irmões Pereira, 670 - Campo Mourão - PR</p>
+            <p>
+                <img src="imagens/pagamento.png" alt="Meios de Pagamentos - Cartão de Crédito em até 4x, Débito, Pix, Boleto Bancário" class="footer-imagem">
+            </p>
+        </footer>
+
+        <script>
+            function mostrarMenu() {
+                document.querySelector(".header-nav").classList.toggle("mostrar");
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sub.marino</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
+
+        <link rel="shortcut icon" href="imagens/icone.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" title="Home">
+                <img src="imagens/submarino-logo.png"
+                alt="Sub.marino" class="header-logo">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu"
+            class="header-menu">
+                <img src="imagens/menu.png" alt="Menu"
+                class="header-btn">
+            </a>
+
+            <nav class="header-nav">
+                <!-- Comentário -->
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html" title="Informática">
+                            Informática
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <img src="imagens/banner.webp" alt="Banner"
+            class="banner-img">
+        </div>
+
+        <h2>Conheça o novo Iphone 14 Pro Max</h2>
+
+        <iframe width="100%" height="545" src="https://www.youtube.com/embed/thSPGPnuuNg" title="Apresentamos o iPhone 14 Pro | Apple" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <main>
+            <h1>Produtos em Destaque</h1>
+
+            <div class="grid">
+                <div class="grid-coluna">
+                    <img src="imagens/01.webp"
+                    alt="Produto 01" class="grid-img">
+                    <p class="grid-titulo">
+                        Smartphone Motorola 6G com 32GB de Memória
+                    </p>
+                    <p class="grid-valor">9.000,00</p>
+                </div>
+
+                <div class="grid-coluna">
+                    <img src="imagens/02.webp"
+                    alt="Produto 02" class="grid-img">
+                    <p class="grid-titulo">
+                        Smartphone Motorola E22
+                    </p>
+                    <p class="grid-valor">19.000,00</p>
+                </div>
+
+                <div class="grid-coluna">
+                    <img src="imagens/03.webp"
+                    alt="Produto 03" class="grid-img">
+                    <p class="grid-titulo">
+                        Mangá Naruto 
+                    </p>
+                    <p class="grid-valor">1,99</p>
+                </div>
+
+                <div class="grid-coluna">
+                    <img src="imagens/04.webp"
+                    alt="Produto 04" class="grid-img">
+                    <p class="grid-titulo">
+                        Notebook Acer i5 com 16GB de RAM e 480GB SSD e Gravador de CD
+                    </p>
+                    <p class="grid-valor">6.000,00</p>
+                </div>
+            </div> <!-- fim da grid -->
+        </main>
+
+        <footer class="footer">
+            <p> Submarino - Sua loja de eletrônicos</p>
+            <p>Av. Irmões Pereira, 670 - Campo Mourão - PR</p>
+            <p>
+                <img src="imagens/pagamento.png" alt="Meios de Pagamentos - Cartão de Crédito em até 4x, Débito, Pix, Boleto Bancário" class="footer-imagem">
+            </p>
+        </footer>
+
+        <script>
+            function mostrarMenu() {
+                document.querySelector(".header-nav").classList.toggle("mostrar");
+            }
+        </script>
+    </body>
+
+</html>

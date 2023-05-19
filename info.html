@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sub.marino</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
+
+        <link rel="shortcut icon" href="imagens/icone.png">
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="index.html" title="Home">
+                <img src="imagens/submarino-logo.png"
+                alt="Sub.marino" class="header-logo">
+            </a>
+
+            <a href="javascript:mostrarMenu()" title="Menu"
+            class="header-menu">
+                <img src="imagens/menu.png" alt="Menu"
+                class="header-btn">
+            </a>
+
+            <nav class="header-nav">
+                <!-- Comentário -->
+                <ul>
+                    <li>
+                        <a href="index.html" title="Home">
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li>
+                        <a href="info.html" title="Informática">
+                            Informática
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contato.html" title="Contato">
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <img src="imagens/banner.webp" alt="Banner"
+            class="banner-img">
+        </div>
+
+        <main>
+            <h1>Produtos de Informática</h1>
+
+            <div class="grid">
+                <div class="grid-coluna">
+                    <img src="imagens/04.webp"
+                    alt="Produto 01" class="grid-img">
+                    <p class="grid-titulo">
+                        Notebook Acer Aspire 5 Intel Core I5 -1135g7 8gb 512gb Ssd W11 14” Fhd Ips Safari Gold A514-54-56ha
+                    </p><br><br>
+                    <p class="grid-valor">R$ 4.990,00</p>
+                </div>
+
+                <div class="grid-coluna">
+                    <img src="imagens/05.webp"
+                    alt="Produto 02" class="grid-img">
+                    <p class="grid-titulo">
+                        Notebook Dell Inspiron I15-I1100-A10pf Intel Pentium Gold-7505 4gb 128gb SSD W11 15.6" + Office 365
+                    </p><br><br>
+                    <p class="grid-valor">R$ 2.999,90</p>
+                </div>
+
+                <div class="grid-coluna">
+                    <img src="imagens/06.webp"
+                    alt="Produto 03" class="grid-img">
+                    <p class="grid-titulo">
+                        Notebook Lenovo Ideapad 3i Intel Celeron-N4020 4gb 128gb SSD Tela 15,6" W11 - Prata
+                    </p><br><br>
+                    <p class="grid-valor">R$ 2.899,90</p>
+                </div>
+
+                <div class="grid-coluna">
+                    <img src="imagens/07.webp"
+                    alt="Produto 04" class="grid-img">
+                    <p class="grid-titulo">
+                        Notebook Notebook Ultra Celeron N4020 4gb 120gb SSD W11 14.1" Preto + Office 365
+                    </p><br><br>
+                    <p class="grid-valor">R$ 1.490,99</p>
+                </div>
+
+        </main>
+
+        <footer class="footer">
+            <p> Submarino - Sua loja de eletrônicos</p>
+            <p>Av. Irmões Pereira, 670 - Campo Mourão - PR</p>
+            <p>
+                <img src="imagens/pagamento.png" alt="Meios de Pagamentos - Cartão de Crédito em até 4x, Débito, Pix, Boleto Bancário" class="footer-imagem">
+            </p>
+        </footer>
+
+        <script>
+            function mostrarMenu() {
+                document.querySelector(".header-nav").classList.toggle("mostrar");
+            }
+        </script>
+    </body>
+
+</html>
