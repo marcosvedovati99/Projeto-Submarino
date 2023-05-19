@@ -1,0 +1,49 @@
+/* regra para desktop */
+@media (min-width: 420px) and (max-width: 1920px) {
+
+    .header .header-menu {
+        /* esconder o botao do menu */
+        display: none;
+    }
+
+    .header .header-nav {
+        /* mostrar o menu */
+        display: block;
+        float: right;
+    }
+
+    .header .header-nav ul li {
+        display: inline-block;
+        width: auto;
+        margin: 10px;
+    }
+
+    /* mudar a cor do link ao passar o mouse */
+    .header .header-nav ul li a:hover {
+        color: black;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .grid .grid-coluna {
+        margin: 10px;
+    }
+
+    .grid .grid-titulo {
+        /* altura */
+        height: 60px;
+    }
+
+    main {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .footer .footer-imagem {
+        width: 400px;
+    }
+
+}
